@@ -6,11 +6,11 @@ const HeroSection = () => {
       <div className="max-w-7xl mx-auto px-4 w-full grid md:grid-cols-2 gap-8 md:gap-12 items-center">
         {/* Text */}
         <div className="animate-fade-slide-up text-center md:text-left order-2 md:order-1">
-          <h1 className="font-heading text-3xl sm:text-4xl lg:text-[52px] leading-tight text-primary-foreground font-bold mb-6">
-            Defenda e proteja seus direitos com{" "}
+          <h1 className="font-heading text-3xl sm:text-4xl lg:text-[52px] leading-[1.2] tracking-tight text-primary-foreground font-bold mb-8">
+            Defenda e proteja<br className="hidden sm:inline" /> seus direitos com{" "}
             <span className="text-accent">transparência</span>
           </h1>
-          <p className="text-primary-foreground/80 text-lg md:text-xl leading-relaxed mb-8 max-w-xl mx-auto md:mx-0">
+          <p className="text-primary-foreground/80 text-base sm:text-lg md:text-xl leading-relaxed mb-10 max-w-lg mx-auto md:mx-0">
             Soluções jurídicas eficazes e atendimento humanizado para proteger o que é seu.
           </p>
           <a
