@@ -40,7 +40,12 @@ const ContactForm = () => {
             <p className="text-muted-foreground">Entraremos em contato em breve.</p>
           </div>
         ) : (
-          <form onSubmit={handleSubmit} className="bg-card rounded-2xl shadow-lg p-6 md:p-10 space-y-5">
+          <form
+  action="https://formsubmit.co/alinefrassonadv@gmail.com" 
+  method="POST" 
+  className="bg-card rounded-2xl shadow-lg p-6 md:p-10 space-y-5"
+>
+
             <div className="grid sm:grid-cols-2 gap-5">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-foreground mb-1.5">Nome</label>
@@ -103,6 +108,9 @@ const ContactForm = () => {
               />
             </div>
             <button type="submit" className="btn-gold w-full flex items-center justify-center gap-2">
+              <input type="hidden" name="_subject" value="Novo contato pelo site" />
+<input type="hidden" name="_captcha" value="false" />
+<input type="hidden" name="_next" value="https://alinefrassonadv.com.br/obrigado.html" />
               <Send size={18} />
               Enviar Mensagem para Dra. Aline
             </button>
